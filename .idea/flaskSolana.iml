@@ -11,6 +11,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="moralis" level="application" />
     <orderEntry type="library" name="browse" level="application" />
+    <orderEntry type="library" name="web3" level="application" />
+    <orderEntry type="library" name="moralis-v1" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
