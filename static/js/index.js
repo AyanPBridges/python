@@ -5,8 +5,6 @@ const getInfo = async () => {
   const options = {
     network: document.getElementById("network").value,
     address: document.getElementById("address").value,};
-  const portfolio = await Moralis.SolanaAPI.account.getPortfolio(options);
+  const nftMetadata = await Moralis.SolanaAPI.nft.getNFTMetadata(options);
   console.log(portfolio);};
 document.getElementById("get-portfolio").onclick = getInfo();
-
-

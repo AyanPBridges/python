@@ -4,10 +4,10 @@
       <link rel ="stylesheet" href = "../static/css/index.css" />
       <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
       <script src="https://unpkg.com/moralis-v1/dist/moralis.js"></script>
-    <title>Solana API Demo</title>
+    <title>Solana Aggregator</title>
   </head>
   <body>
-    <h2>Solana API Demo</h2>
+    <h2>Solana Aggregator</h2>
     <label for="address"></label><input type="text" id="address" name="address" placeholder="address">
     <label for="network"></label><select id="network" name="network" aria-placeholder="network">
       <option value="mainnet">Mainnet</option>
@@ -15,6 +15,22 @@
     </select>
     <button id="getInfo">Get Info</button>
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+    <p class="center">
+        mint = {{mintl}}
+        <br> standard = {{standardl}}
+        <br> name = {{namel}}
+        <br> symbol = {{symboll}}
+        <br> Metadata URL = {{metadataUrll}}
+        <br> Update Authority = {{updateAuthoriityl}}
+        <br> Seller Fee Basis Points = {{sellerFeeBasisPointsl}}
+        <br> Primary Sale Happened = {{primarySaleHappenedl}}
+        <br> is Mutable = {{isMutablel}}
+        <br> Master Edition = {{masterEditionl}}
+        <br> Owner Address = {{addressl}}
+        <br> Owner Verified = {{verifiedl}}
+        <br> Owner Share = {{sharel}}
+    </p>
     <h1>Moralis API Response:</h1>
     <div id="result"></div>
     <script src="../static/js/test.js"></script>
